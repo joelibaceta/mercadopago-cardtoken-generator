@@ -88,9 +88,6 @@
 <script>
   $("input[name='public_key']").on("change", function(e){
 
-    console.log(e.target.value != "");
-    console.log(e.target.value);
-
     if (e.target.value != "" ){
       try {
         Mercadopago.setPublishableKey(e.target.value);
